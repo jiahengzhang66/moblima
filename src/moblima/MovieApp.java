@@ -6,11 +6,8 @@ public class MovieApp {
 		// TODO Auto-generated method stub
 // Ashley made this
 		//Ada was here
-<<<<<<< HEAD
 		//aba
-=======
 		//b
->>>>>>> branch 'master' of https://github.com/jiahengzhang66/moblima.git
 	}
 
 }
