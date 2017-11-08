@@ -7,8 +7,11 @@ public class MovieApp {
 // Ashley made this
 		//Ada was here
 		//aba
-		//b
+		//
 		//Qinan was here
+		Booking test= new Booking();
+		test.createExcelFile();
+		System.out.println("excel File Created");
 	}
 
 }
