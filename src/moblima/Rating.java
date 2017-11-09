@@ -1,4 +1,4 @@
-package moblima;
+/*package moblima;
 
 public class Rating {
 	private String title;
@@ -38,4 +38,4 @@ public class Rating {
 	}
 	
 	
-}
+}*/

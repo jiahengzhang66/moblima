@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.Calendar;
 import java.util.List;
 
-public abstract class Movies {
+public abstract class Movies {/*
 	private String title;
 	
 	private int movieID;
@@ -219,4 +219,4 @@ public abstract class Movies {
 	abstract String typeOfMovie();
 	
 	abstract float movieTypePriceModifier(boolean blockBuster) ;
-	}
+	*/}
