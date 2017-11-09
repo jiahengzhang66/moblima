@@ -22,7 +22,7 @@ public BookingDatabaseController() {
 		try{
 	
 			bookingDatabaseInputFile = new FileInputStream(new File("Booking Database.xls"));
-			//bookingDatabaseOutputFile = new FileOutputStream(new File("Booking Database.xls"));
+			//bookingDatabaseOutputFile = new FileOutputStream(new File("Booking Database.xls")); n
 			this.bookingDatabaseInputFile = bookingDatabaseInputFile;
 			//this.bookingDatabaseOutputFile = bookingDatabaseOutputFile;
 			POIFSFileSystem fs = new POIFSFileSystem(bookingDatabaseInputFile);
