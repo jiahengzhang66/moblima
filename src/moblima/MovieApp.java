@@ -1,6 +1,4 @@
 package moblima;
-import java.util.Scanner;
-
 
 public class MovieApp {
 
