@@ -2,8 +2,8 @@ package moblima;
 
 public class ChildTicket extends Ticket {
 	
-	public ChildTicket (int seatID) {
-	super(seatID); 
+	public ChildTicket (int seatID, int movieID) {
+	super(seatID,movieID); 
 	this.ticketType = "ChildTicket";
 	this.priceModifier = -5;
 	}
