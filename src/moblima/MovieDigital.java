@@ -5,7 +5,7 @@ public class MovieDigital extends Movies{
 
 	
 	
-	private float movieTypePriceModifier= 2.0f;
+	private float movieTypePriceModifier= 2.0f;//default price
 	
 	String typeOfMovie() {
 		return "digital";
