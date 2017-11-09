@@ -1,11 +1,5 @@
 package moblima;
-import java.util.Date;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+//import java.util.Date;
 
 public class Booking {
 	private int bookingID;
@@ -14,34 +8,38 @@ public class Booking {
 	private String email;
 	private double ticketID;
 	private double cinemaCode;
-	private Date dateTime;
+	private String dateTime;
 	private int movieID;
 	
-public Booking(int bookingID, /*String name*/ double mobileNum, String email, double cinemaCode, Date dateTime, int movieID) {
+public Booking(int bookingID, /*String name*/ double mobileNum, String email, double ticketID, double cinemaCode, String dateTime, int movieID) {
 	this.bookingID = bookingID;
 	this.mobileNum = mobileNum;
 	this.email = email;
 	this.movieID = movieID;
 	this.cinemaCode = cinemaCode;
 	this.dateTime = dateTime;
-	//this.ticketID = this.setTicketID();
+	this.ticketID = ticketID;
 }
-public Booking() {}
-/*private double setTicketID() {
-	
-}*/
 
-
-public void createExcelFile() {
-	HSSFWorkbook wb = new HSSFWorkbook();
-    FileOutputStream fileOut;
-	try {
-		fileOut = new FileOutputStream("Booking Database.xls");
-		wb.write(fileOut);
-	    fileOut.close();
-	} catch (IOException e1) {
-		// TODO Auto-generated catch block
-		e1.printStackTrace();
-	}
-    }
+public int getBookingID() {
+	return this.bookingID;
+}
+public double getMobileNum() {
+	return this.mobileNum;
+}
+public String getEmail() {
+	return this.email;
+}
+public int getMovieID() {
+	return this.movieID;
+}
+public double getCinemaCode() {
+	return this.cinemaCode;
+}
+public double getTicketID() {
+	return this.ticketID;
+}
+public String getDateTime() {
+	return this.dateTime;
+}
 }
