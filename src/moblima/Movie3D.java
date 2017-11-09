@@ -4,7 +4,7 @@ package moblima;
 public class Movie3D extends Movies{
 	
 	
-	private float movieTypePriceModifier = 3.0f;
+	private float movieTypePriceModifier = 3.0f;//default price
 	
 	String typeOfMovie() {
 		return "3D";
