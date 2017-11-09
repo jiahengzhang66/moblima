@@ -1,4 +1,4 @@
-package moblima;
+/*package moblima;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ public class MovieList {
 		}
 		
 				for (i = 1; i<n; i++) {//A is the file name
-				  for (j = i - 1; j >= 0 ; j —) {
+				  for (j = i - 1; j >= 0 ; j ï¿½) {
 				    if (A[i][0] > A[j][0]) {
 				      temp = A[i][0];
 				      A[i][0] = A[j][0];
@@ -45,7 +45,7 @@ public class MovieList {
 			}
 			
 			for (i = 1; i<n; i++) {
-			  for (j = i - 1; j >= 0 ; j —) {//B is the new name
+			  for (j = i - 1; j >= 0 ; j ï¿½) {//B is the new name
 			    if (B[i][0] > B[j][0]) {
 			      temp = B[i][0];
 			      B[i][0] = B[j][0];
@@ -106,4 +106,4 @@ public class MovieList {
 		}
 		//remove the whole row
 	}
-}
+}*/
