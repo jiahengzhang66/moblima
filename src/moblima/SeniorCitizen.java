@@ -7,7 +7,6 @@ public class SeniorCitizen extends Ticket {
 	this.priceModifier = -5;
 	}
 	
-	
 	public void setPriceModifier(float priceModifier) {
 		this.priceModifier = priceModifier;
 	};

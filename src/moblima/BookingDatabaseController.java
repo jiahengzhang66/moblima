@@ -21,9 +21,8 @@ public BookingDatabaseController() {
 	FileInputStream bookingDatabaseInputFile;
 	FileOutputStream bookingDatabaseOutputFile;
 		try{
-	
 			bookingDatabaseInputFile = new FileInputStream(new File("Booking Database.xls"));
-			//bookingDatabaseOutputFile = new FileOutputStream(new File("Booking Database.xls")); n
+			//bookingDatabaseOutputFile = new FileOutputStream(new File("Booking Database.xls"));
 			this.bookingDatabaseInputFile = bookingDatabaseInputFile;
 			//this.bookingDatabaseOutputFile = bookingDatabaseOutputFile;
 			POIFSFileSystem fs = new POIFSFileSystem(bookingDatabaseInputFile);
@@ -88,9 +87,9 @@ public BookingDatabaseController() {
 			POIFSFileSystem fs = new POIFSFileSystem(bookingDatabaseInputFile);
 			workbook = new HSSFWorkbook(fs);
 			HSSFSheet sheet = workbook.getSheetAt(0);
-			HSSFCell cell = null;
 			System.out.println(sheet.getPhysicalNumberOfRows());
 			//System.out.println(sheet.createRow(noOfEntries).createCell((short)0));
+			HSSFCell cell = null;
 			cell = sheet.createRow(noOfEntries).createCell(0);
 			cell.setCellValue(newBooking.getBookingID());
 			cell = sheet.getRow(noOfEntries).createCell(1);
