@@ -1,13 +1,14 @@
 package moblima;
 
 import java.util.Date;
+import java.util.*;
 
-import assignment.Movies;
 
-public abstract class Movies {
+
+public class Movies {
 	
 	
-	private String title;
+private String title;
 	
 	private int movieID;
 	
@@ -23,19 +24,19 @@ public abstract class Movies {
 	
 	private String ageRating;
 	
-	private String[] cineplexes;
-	
 	private String actors;
 	
 	private String director;
 	
 	private boolean blockBuster;
 	
+	private double averageRating;
+	
 	private int totalTicketSale;
 	
 	private String typeOfMovie; 
 	
-	public Movies(String title,int movieID,Date releaseDate,String genre,String language,String synopsis,String status,String ageRating,String[] cineplexes,String actors, String director, boolean blockBuster) {
+	public Movies(String title,int movieID,Date releaseDate,String genre,String language,String synopsis,String status,String ageRating,String actors, String director, boolean blockBuster, double averageRating) {
 		this.title = title;
 		this.movieID= movieID;
 		this.releaseDate = releaseDate;
@@ -44,10 +45,10 @@ public abstract class Movies {
 		this.synopsis = synopsis;
 		this.status = status;
 		this.ageRating = ageRating;
-		this.cineplexes = cineplexes;
 		this.actors = actors;
 		this.director = director;
 		this.blockBuster = blockBuster;
+		this.averageRating = averageRating;
 		}
 	
 	public String getTitle() {
@@ -78,13 +79,10 @@ public abstract class Movies {
 		return status;
 	}
 	
-	public String getageRating() {
+	public String getAgeRating() {
 		return ageRating;
 	}
 	
-	public String[] getCineplexs() {
-		return cineplexes;
-	}
 	
 	public String getActors() {
 		return actors;
@@ -96,6 +94,10 @@ public abstract class Movies {
 	
 	public boolean getBlockBuster() {
 		return blockBuster;
+	}
+	
+	public double getAverageRating() {
+		return averageRating;
 	}
 	
 	public int getTotalTicketSale() {
@@ -134,10 +136,6 @@ public abstract class Movies {
 		ageRating = AR;
 	}
 	
-	public void setCineplexs(String[] C) {
-		cineplexes = C;
-	}
-	
 	public void setActors(String A) {
 		actors = A;
 	}
@@ -150,8 +148,9 @@ public abstract class Movies {
 		blockBuster = B;
 	}
 	
-	
-	abstract float movieTypePriceModifier(boolean blockBuster) ;
+	public void setAverageRating(double RA) {
+		averageRating = RA;
+	}
 	
 
 	}
