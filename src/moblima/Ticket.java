@@ -7,7 +7,7 @@ import java.text.ParseException;
 
 public abstract class Ticket {
 
-	public double ticketID = 0; //remove "abstract" variables in class diagram
+	public double ticketID = 1; //remove "abstract" variables in class diagram
 	public int seatID;
 	public boolean assigned;
 	public int movieID;
@@ -16,12 +16,13 @@ public abstract class Ticket {
 	public float priceModifier;
 	public boolean datePriceStatus;
 	public float datePrice;
-	public int totalSales=0; //add to class diagram
 
 	
-	public Ticket(int seatID) { //change to class diagram
+	public Ticket(int seatID, int movieID) { //change to class diagram
 		this.ticketID = generateTicketID();
 		this.seatID = seatID;
+		this.movieID=movieID;
+		//Movies.totalTicketSales++;
 	}
 	
 	public double generateTicketID() { //add to class diagram
@@ -34,7 +35,6 @@ public abstract class Ticket {
 	}
 	public void assign(int cust_id) {
 		this.cust_id = cust_id;
-		totalSales++;   // totalsales logged only when seat is assigned
 		assigned = true;
 	}
 	
@@ -44,12 +44,8 @@ public abstract class Ticket {
 	public void unAssign() {
 		this.cust_id = -1;
 		assigned = false;
-		totalSales--;
 	}
-	public int getTotalSales() {
-		return totalSales;
-	}
-	
+
 	public Date convertHolidayDate(String day, String month, String date, String year) throws ParseException {
 		holidayDateList hd = new holidayDateList();
 		String a = hd.stringHolidayDate(day, month, date, year);

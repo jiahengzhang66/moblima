@@ -58,6 +58,7 @@ public class holidayDateList {
 		String d = stringHolidayDate(day, month, date, year);
 		writer.write("\n" + d);
 		writer.close();
+		sc.close();
 	}
 	
 	private String dateToString(Date d) {
@@ -106,7 +107,7 @@ public class holidayDateList {
 		String d = stringHolidayDate(day, month, date, year);
 		int counter = 0;
 		String e = d;
-		String replace = "Sunday, January 7, 1583"; //replace the date with a junk date so that there will not be errors
+		String replace = "Sunday, January 1, 1111"; //replace the date with a junk date so that there will not be errors
 
 		
 		System.out.println("test");

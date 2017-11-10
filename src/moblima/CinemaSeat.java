@@ -1,35 +1,51 @@
 package moblima;
 
+
 public class CinemaSeat {
-	private int seatID;
+	private int seatID = 999;
 	private boolean assigned = false;
-	private double movieGoersID = 0;
+	private int movieGoersID = 999999;
 
 
-	private CinemaSeat(int seatID) {}
+	public CinemaSeat(int seatID) {}
 	
-	private int getSeatID() {
-		return seatID;
+	public CinemaSeat() {}
+	
+	public int getSeatID() {
+		return this.seatID;
+	}
+	public void setSeatID(int seatID) {
+		this.seatID = seatID;
 	}
 	
-	private double getCustomerID( ) {
+	
+	public void assign(int cust_id) {
+		setAssigned(true);
+		setMovieGoersID(cust_id);
+	}
+	
+	public void unAssign() {
+		setAssigned(false);
+		setMovieGoersID(0);
+	}
+
+	public int getMovieGoersID() {
 		return movieGoersID;
 	}
-	
-	private boolean isOccupied() {
+
+	public void setMovieGoersID(int movieGoersID) {
+		this.movieGoersID = movieGoersID;
+	}
+
+	public boolean isAssigned() {
 		return assigned;
 	}
-	
-	private void assign(int cust_id) {
-		assigned = true;
-		movieGoersID = cust_id;
+
+	public void setAssigned(boolean assigned) {
+		this.assigned = assigned;
 	}
-	
-	private void unAssign() {
-		assigned = false;
-		movieGoersID = 0;
-	}
-	
+
+
 	
 }
 

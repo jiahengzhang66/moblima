@@ -1,29 +1,30 @@
-/*package moblima;
+package moblima;
 
 
 public class Review {
 	private String title;
-	private String content;
 	private int movieID;
+	private String review;
 	
-	public Review(int movieID, String review) {
+	public Review(String title, int movieID, String review) {
+		this.title = title;
 		this.movieID = movieID;
-		content = review;
+		this.review = review;
 	}
 	
 	public int getMovieID() {
 		return movieID;
 	}
 	
-	public void displayReview(int movieID) {
-			//read file here
-		for (int i = 0; i <15; i ++) {
-			if (file[i][1]==movieID)
-			System.out.println(file[i][2])
-		}
-		
+	public String getReview() {
+			return review;
 	}
 	
+	public void setReview(String RW) {
+		review = RW;
+	}
+
+}
 
 
-}*/
+}

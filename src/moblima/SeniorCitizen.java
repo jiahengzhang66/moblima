@@ -1,8 +1,8 @@
 package moblima;
 
 public class SeniorCitizen extends Ticket {
-	public SeniorCitizen (int seatID) {
-	super(seatID); 
+	public SeniorCitizen (int seatID, int movieID) {
+	super(seatID, movieID); 
 	this.ticketType = "Senior Citizen Ticket";
 	this.priceModifier = -5;
 	}

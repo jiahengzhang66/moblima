@@ -1,11 +1,12 @@
 package moblima;
 
-import java.io.File;
-import java.util.*;
-import java.util.Calendar;
-import java.util.List;
+import java.util.Date;
 
-public abstract class Movies {/*
+import assignment.Movies;
+
+public abstract class Movies {
+	
+	
 	private String title;
 	
 	private int movieID;
@@ -28,16 +29,26 @@ public abstract class Movies {/*
 	
 	private String director;
 	
-	private boolean blockbuster;
+	private boolean blockBuster;
+	
+	private int totalTicketSale;
 	
 	private String typeOfMovie; 
 	
-	private float movieTypePriceModifier; 
-	
-	public String Movie(String title) {
+	public Movies(String title,int movieID,Date releaseDate,String genre,String language,String synopsis,String status,String ageRating,String[] cineplexes,String actors, String director, boolean blockBuster) {
 		this.title = title;
-		return title;
-	}
+		this.movieID= movieID;
+		this.releaseDate = releaseDate;
+		this.genre = genre;
+		this.language = language;
+		this.synopsis = synopsis;
+		this.status = status;
+		this.ageRating = ageRating;
+		this.cineplexes = cineplexes;
+		this.actors = actors;
+		this.director = director;
+		this.blockBuster = blockBuster;
+		}
 	
 	public String getTitle() {
 		return title;
@@ -67,6 +78,10 @@ public abstract class Movies {/*
 		return status;
 	}
 	
+	public String getageRating() {
+		return ageRating;
+	}
+	
 	public String[] getCineplexs() {
 		return cineplexes;
 	}
@@ -80,143 +95,63 @@ public abstract class Movies {/*
 	}
 	
 	public boolean getBlockBuster() {
-		return blockbuster;
+		return blockBuster;
 	}
 	
-	
-	public void setTitle(String title) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public int getTotalTicketSale() {
+		return totalTicketSale;
 	}
 	
-	public void setMovieID(int movieID) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setTotalTicketSale(int TTs) {
+		totalTicketSale = TTs;
+	}
+	public void setTitle(String T) {
+		title = T;
+		
 	}
 	
-	public void setReleaseDate(Date releaseDate) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setMovieID(int ID) {
+		movieID=ID;
 	}
 	
-	public void setLanguage(String language) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setReleaseDate(Date RD) {
+		releaseDate = RD;
 	}
 	
-	public void setSynopsis(String synopsis) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setLanguage(String L) {
+		language = L;
 	}
 	
-	public void setStatus(String status) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setSynopsis(String S) {
+		synopsis = S;
 	}
 	
-	public void setAgeRating(String agerating) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setStatus(String ST) {
+		status = ST;
 	}
 	
-	public void setCineplexs(String[] Cineplexs) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setAgeRating(String AR) {
+		ageRating = AR;
 	}
 	
-	public void setActors(String actors) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setCineplexs(String[] C) {
+		cineplexes = C;
 	}
 	
-	public void setDirector(String director) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setActors(String A) {
+		actors = A;
 	}
 	
-	public void setBlockBuster(boolean blockbuster) {
-		int i;
-		int n=1;//this is to count the array size;
-		Rating[][] temp;
-	
-		//read the file here
-		while (file[i][]!= null) {
-			n++;
-			i++;
-		}
+	public void setDirector(String D) {
+		director = D;
 	}
 	
-	abstract String typeOfMovie();
+	public void setBlockBuster(boolean B) {
+		blockBuster = B;
+	}
+	
 	
 	abstract float movieTypePriceModifier(boolean blockBuster) ;
-	*/}
+	
+
+	}

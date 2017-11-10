@@ -15,7 +15,7 @@ public Booking(int bookingID, /*String name*/ double mobileNum, String email, do
 	this.bookingID = bookingID;
 	this.mobileNum = mobileNum;
 	this.email = email;
-	this.movieID = movieID;
+	this.movieID= movieID;
 	this.cinemaCode = cinemaCode;
 	this.dateTime = dateTime;
 	this.ticketID = ticketID;
