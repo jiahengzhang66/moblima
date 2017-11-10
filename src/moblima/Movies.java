@@ -14,7 +14,7 @@ public abstract class Movies {/*
 	
 	private String genre;
 	
-	private String 	language;
+	private String language;
 	
 	private String synopsis;
 	
