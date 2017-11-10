@@ -1,11 +1,12 @@
 package moblima;
 
-import java.io.File;
-import java.util.*;
-import java.util.Calendar;
-import java.util.List;
+import java.util.Date;
 
-public abstract class Movies {/*
+import assignment.Movies;
+
+public abstract class Movies {
+	private Movies[] movie;
+	
 	private String title;
 	
 	private int movieID;
@@ -28,7 +29,9 @@ public abstract class Movies {/*
 	
 	private String director;
 	
-	private boolean blockbuster;
+	private boolean blockBuster;
+	
+	private int totalTicketSale;
 	
 	private String typeOfMovie; 
 	
@@ -80,59 +83,63 @@ public abstract class Movies {/*
 	}
 	
 	public boolean getBlockBuster() {
-		return blockbuster;
+		return blockBuster;
 	}
 	
-	
-	public void setTitle(String title) {
-	
+	public int getTotalTicketSale() {
+		return totalTicketSale;
 	}
 	
-	public void setMovieID(int movieID) {
+	public void setTotalTicketSale(int TTs) {
+		totalTicketSale = TTs;
+	}
+	public void setTitle(String T) {
+		title = T;
 		
 	}
 	
-	public void setReleaseDate(Date releaseDate) {
-	
+	public void setMovieID(int ID) {
+		movieID=ID;
 	}
 	
-	public void setLanguage(String language) {
-		
+	public void setReleaseDate(Date RD) {
+		releaseDate = RD;
 	}
 	
-	public void setSynopsis(String synopsis) {
-		
+	public void setLanguage(String L) {
+		language = L;
 	}
 	
-	public void setStatus(String status) {
-	
+	public void setSynopsis(String S) {
+		synopsis = S;
 	}
 	
-	public void setAgeRating(String agerating) {
-	
+	public void setStatus(String ST) {
+		status = ST;
 	}
 	
-	public void setCineplexs(String[] Cineplexs) {
-	
+	public void setAgeRating(String AR) {
+		ageRating = AR;
 	}
 	
-	public void setActors(String actors) {
-		
+	public void setCineplexs(String[] C) {
+		cineplexes = C;
 	}
 	
-	public void setDirector(String director) {
-	
+	public void setActors(String A) {
+		actors = A;
 	}
 	
-	public void setBlockBuster(boolean blockbuster) {
-	
+	public void setDirector(String D) {
+		director = D;
 	}
 	
-	public abstract String typeOfMovie();
-	
-	public abstract float movieTypePriceModifier(boolean blockBuster) ;
-	
-	public void displayMovies(){
-	
+	public void setBlockBuster(boolean B) {
+		blockBuster = B;
 	}
-	*/}
+	
+	
+	abstract float movieTypePriceModifier(boolean blockBuster) ;
+	
+
+	}
