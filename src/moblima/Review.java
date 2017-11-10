@@ -3,13 +3,13 @@ package moblima;
 
 public class Review {
 	private String title;
-	private String content;
 	private int movieID;
 	private String review;
 	
-	public Review(int movieID, String review) {
+	public Review(String title, int movieID, String review) {
+		this.title = title;
 		this.movieID = movieID;
-		content = review;
+		this.review = review;
 	}
 	
 	public int getMovieID() {
@@ -23,5 +23,8 @@ public class Review {
 	public void setReview(String RW) {
 		review = RW;
 	}
+
+}
+
 
 }

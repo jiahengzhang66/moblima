@@ -78,6 +78,10 @@ public abstract class Movies {
 		return status;
 	}
 	
+	public String getageRating() {
+		return ageRating;
+	}
+	
 	public String[] getCineplexs() {
 		return cineplexes;
 	}
@@ -150,4 +154,4 @@ public abstract class Movies {
 	abstract float movieTypePriceModifier(boolean blockBuster) ;
 	
 
-}
+	}
