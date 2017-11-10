@@ -5,7 +5,7 @@ import java.util.Date;
 import assignment.Movies;
 
 public abstract class Movies {
-	private Movies[] movie;
+	
 	
 	private String title;
 	
@@ -35,12 +35,20 @@ public abstract class Movies {
 	
 	private String typeOfMovie; 
 	
-	private float movieTypePriceModifier; 
-	
-	public String Movie(String title) {
+	public Movies(String title,int movieID,Date releaseDate,String genre,String language,String synopsis,String status,String ageRating,String[] cineplexes,String actors, String director, boolean blockBuster) {
 		this.title = title;
-		return title;
-	}
+		this.movieID= movieID;
+		this.releaseDate = releaseDate;
+		this.genre = genre;
+		this.language = language;
+		this.synopsis = synopsis;
+		this.status = status;
+		this.ageRating = ageRating;
+		this.cineplexes = cineplexes;
+		this.actors = actors;
+		this.director = director;
+		this.blockBuster = blockBuster;
+		}
 	
 	public String getTitle() {
 		return title;
@@ -142,4 +150,4 @@ public abstract class Movies {
 	abstract float movieTypePriceModifier(boolean blockBuster) ;
 	
 
-	}
+}
