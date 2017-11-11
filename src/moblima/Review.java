@@ -11,7 +11,9 @@ public class Review {
 		this.movieID = movieID;
 		this.review = review;
 	}
-	
+	public String getTitle() {
+		return title;
+	}
 	public int getMovieID() {
 		return movieID;
 	}
@@ -27,4 +29,3 @@ public class Review {
 }
 
 
-}
